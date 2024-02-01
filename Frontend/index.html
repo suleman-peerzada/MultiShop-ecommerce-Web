@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../Assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <link rel="stylesheet" href="../Assets/css/queries.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar top -->
+      <section class="py-1 nav-top-bg px-1 px-xl-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="top-nav d-flex justify-content-between flex-wrap">
+              <ul class="nav-top-hidden mb-0 p-0 d-none">
+                <li><a href="#" class="top-nav-pad py-1 pe-2">About</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">Contact</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">Help</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">FAQs</a></li>
+              </ul>
+              <div
+                class="dropdown dropdown-for-center d-flex align-items-center"
+              >
+                <button
+                  class="btn bg-white dropdown-toggle nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Acoount
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Sign up</a></li>
+                </ul>
+                <button
+                  class="btn bg-white dropdown-toggle mx-1 mx-lg-2 nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                  <li><a class="dropdown-item" href="#">GBP</a></li>
+                  <li><a class="dropdown-item" href="#">CAD</a></li>
+                </ul>
+                <button
+                  class="btn bg-white dropdown-toggle nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EN
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">FR</a></li>
+                  <li><a class="dropdown-item" href="#">AR</a></li>
+                  <li><a class="dropdown-item" href="#">RU</a></li>
+                </ul>
+              </div>
+              <div class="d-flex d-lg-none">
+                <div class="nav-top-icon d-flex align-items-center ms-3">
+                  <i class="fa fa-heart me-2"></i>
+                  <span class="cirlce-icon-nav">
+                    <h6 class="mb-0">0</h6>
+                  </span>
+                </div>
+                <div class="nav-top-icon d-flex align-items-center ms-3">
+                  <i class="fi fi-rs-shopping-cart me-2 mt-2"></i>
+                  <span class="cirlce-icon-nav">
+                    <h6 class="mb-0">0</h6>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Navbar Middle -->
+      <section class="py-3 px-xl-5 d-none d-lg-block bg-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="total-nav d-flex justify-content-between align-items-center"
+            >
+              <div class="mid-nav px-0 d-flex">
+                <div class="d-flex">
+                  <h1
+                    class="bg-dark bg-opacity-75 text-warning fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    MULTI
+                  </h1>
+                  <h1
+                    class="bg-warning text-dark fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    SHOP
+                  </h1>
+                </div>
+              </div>
+              <div class="input-group sizing-srch-icon">
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Search for products"
+                  aria-label="products"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn text-warning rounded-0 search-btn searchbar-bg"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+
+              <div class="for-customer d-flex justify-content-end flex-column">
+                <p class="text-end">Customer Service</p>
+                <p class="fs-5">+012 345 6789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- navbar end  -->
+      <section class="px-3 px-xl-5 bg-color-end bg-opacity-75">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg py-lg-0">
+            <div class="container-fluid px-2 px-xl-4">
+              <div class="btn-group d-none d-lg-block">
+                <button
+                  type="button"
+                  class="btn btn-warning dropdown-toggle px-4 py-4 rounded-0 toggles-spacer d-flex justify-content-center align-items-center fw-bold"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fi fi-rs-align-justify d-flex me-2"></i> Categories
+                </button>
+                <div class="dropdown-menu dropdown-menu-end w-100">
+                  <a href="#" class="dropdown-item">Dresses</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Shirts</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jeans</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Swimwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Sleepwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Spotwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jumpsuits</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Blazers</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jackets</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Shoes</a>
+                </div>
+              </div>
+
+              <div class="mid-nav d-flex d-lg-none">
+                <div class="d-flex">
+                  <h1
+                    class="bg-white text-dark fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    MULTI
+                  </h1>
+                  <h1
+                    class="bg-warning text-white fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    SHOP
+                  </h1>
+                </div>
+              </div>
+
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler bg-white px-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link clicker-nav active text-white"
+                      aria-current="page"
+                      href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav" href="./shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav" href="./shop-detail.html">Shop Detail</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-white clicker-nav"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu bg-warning rounded-0">
+                      <li>
+                        <a class="dropdown-item" href="./shopping-cart.html">Shopping Cart</a>
+                      </li>
+                      <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+
+                <div class="d-none d-lg-flex">
+                  <div class="nav-top-icon d-flex align-items-center ms-3">
+                    <i class="fa fa-heart me-2 text-warning"></i>
+                    <span class="cirlce-icon-nav border-light">
+                      <h6 class="mb-0 text-white">0</h6>
+                    </span>
+                  </div>
+                  <div class="nav-top-icon d-flex align-items-center ms-3">
+                    <i
+                      class="fi fi-rs-shopping-cart me-2 mt-2 text-warning"
+                    ></i>
+                    <span class="cirlce-icon-nav border-light">
+                      <h6 class="mb-0 text-white">0</h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- carousel  -->
+      <section class="px-xl-5 pt-4 pb-5">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active py-2 bg-white"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    class="py-2 bg-white"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    class="py-2 bg-white"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000" style="height: 430px;">
+                    <img
+                      src="../Assets/images/carousel-1.jpg"
+                      class="d-block w-100 carouse-coloring object-fit-cover h-100"
+                      alt="carouse-l"
+                    />
+                    <div class="carousel-caption text-white carouse-sizing position-absolute top-50 start-50 translate-middle py-0 w-75">
+                      <h1 class="mb-3 wow animate__animated animate__fadeInDown display-4">Men Fashion</h1>
+                      <p class="wow animate__animated animate__bounceIn">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad, voluptatem. Voluptatibus.
+                      </p>
+                      <button class="btn bg-transparent text-white border-light rounded-0 px-4 mt-4 wow animate__animated animate__fadeInUp"> 
+  
+                        Shop Now
+                    </button> 
+                    </div>
+
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000" style="height: 430px;">
+                    <img
+                      src="../Assets/images/carousel-2.jpg"
+                      class="d-block w-100 carouse-coloring object-fit-cover h-100"
+                      alt="carouse-2"
+                    />
+                    <div class="carousel-caption text-white carouse-sizing position-absolute top-50 start-50 translate-middle py-0 w-75">
+                      <h1 class="mb-3 wow animate__animated animate__fadeInDown display-4">Women Fashion</h1>
+                      <p class="wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad, voluptatem. Voluptatibus.
+                      </p>
+                      <button class="btn bg-transparent text-white border-light rounded-0 px-4 mt-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s"> 
+  
+                        Shop Now
+                    </button> 
+                    </div>
+
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000" style="height: 430px;">
+                    <img
+                      src="../Assets/images/carousel-3.jpg"
+                      class="d-block w-100 carouse-coloring object-fit-cover h-100"
+                      alt="carouse-3"
+                    />
+                    <div class="carousel-caption text-white carouse-sizing position-absolute top-50 start-50 translate-middle py-0 w-75">
+                      <h1 class="mb-3 wow animate__animated animate__fadeInDown fashion-font display-4">Kids Fashion</h1>
+                      <p class="wow animate__animated animate__bounceIn">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad, voluptatem. Voluptatibus.
+                      </p>
+                      <button class="btn bg-transparent text-white border-light rounded-0 px-4 mt-4 wow animate__animated animate__fadeInUp"> 
+  
+                        Shop Now
+                    </button> 
+                    </div>
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center flex-column offer-bg-img position-relative py-5 overflow-hidden">
+                      <h6 class="mb-3 fw-bold text-white">SAVE 20%</h6>
+                      <h4 class="fw-bold text-white">
+                        Special Offer
+                      </h4>
+                      <button class="btn bg-warning text-dark border-light rounded-0 px-4 mt-1 border-0"> 
+  
+                        Shop Now
+                    </button> 
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="d-flex align-items-center flex-column offer-bg-img2 position-relative py-5 overflow-hidden">
+                      <h6 class="mb-3 fw-bold text-white">SAVE 20%</h6>
+                      <h4 class="fw-bold text-white">
+                        Special Offer
+                      </h4>
+                      <button class="btn bg-warning text-dark border-light rounded-0 px-4 mt-1 border-0"> 
+  
+                        Shop Now
+                    </button> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+    <!-- shipping  -->
+    <section class="px-xl-5 py-5">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <!-- box1 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <div class="card-body d-flex px-4 py-4">
+                <i class="fi fi-rs-check display-6 text-warning me-2"></i>
+              
+              <h5 class="fw-bold d-flex align-items-center">Quality product</h5>
+              </div>
+            </div>
+            <div class="product bg-white border">
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <div class="card-body d-flex px-4 py-4">
+                <i class="fi fi-rs-truck-side display-6 text-warning me-2"></i>
+                
+              <h5 class="fw-bold d-flex align-items-center">Free Shipping</h5>
+              </div>
+            </div>
+            <div class="product bg-white border">
+            </div>
+          </div>
+          <!-- box3 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <div class="card-body d-flex px-4 py-4">
+                <i class="fi fi-rs-exchange display-6 text-warning me-2"></i>
+              
+              <h5 class="fw-bold d-flex align-items-center">14-Day Return</h5>
+              </div>
+            </div>
+            <div class="product bg-white border">
+            </div>
+          </div>
+          <!-- box4 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <div class="card-body d-flex px-4 py-4">
+                <i class="fi fi-rs-phone-call display-6 text-warning me-3 supporting-call"></i>
+              
+              <h5 class="fw-bold d-flex align-items-center">24/7 Support</h5>
+              </div>
+            </div>
+            <div class="product bg-white border">
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+    <!-- Categories -->
+    <section class="px-xl-5 py-5">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="">
+            <h2 class="section-title position-relative my-0 fw-bold text-uppercase">
+              <span class="product-bg pe-2">Categories</span>
+            </h2>
+          </div>
+        </div>
+        <!-- names -->
+        <div class="row g-4 mt-1">
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+              <div class="card-body color-changer d-flex p-0">
+                <div class="image-maker overflow-hidden">
+                <img src="../Assets/images/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+                <div class="d-flex flex-column justify-content-center ps-3">
+                <h6 class="card-title fw-bold">Category Name</h6>
+                <small class="card-text">100 Products</small>
+              </div>
+              </div>
+            </div>   
+        </div>
+        <!-- product 2 -->
+        <div class=" col-sm-6 col-md-4 col-lg-3">
+          <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+          <div class="card-body color-changer d-flex p-0">
+            <div class="image-maker overflow-hidden">
+            <img src="../Assets/images/cat-2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+            <div class="d-flex flex-column justify-content-center ps-3">
+            <h6 class="card-title fw-bold">Category Name</h6>
+            <small class="card-text">100 Products</small>
+          </div>
+          </div>
+        </div>   
+    </div>
+        <!-- product 3 -->
+    <div class=" col-sm-6 col-md-4 col-lg-3">
+      <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+      <div class="card-body color-changer d-flex p-0">
+        <div class="image-maker overflow-hidden">
+        <img src="../Assets/images/cat-3.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+        <div class="d-flex flex-column justify-content-center ps-3">
+        <h6 class="card-title fw-bold">Category Name</h6>
+        <small class="card-text">100 Products</small>
+      </div>
+      </div>
+    </div>   
+</div>
+        <!-- product 4 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+  <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+  <div class="card-body color-changer d-flex p-0">
+    <div class="image-maker overflow-hidden">
+    <img src="../Assets/images/cat-4.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+    <div class="d-flex flex-column justify-content-center ps-3">
+    <h6 class="card-title fw-bold">Category Name</h6>
+    <small class="card-text">100 Products</small>
+  </div>
+  </div>
+</div>   
+</div>
+        <!-- product 5 -->
+        <div class=" col-sm-6 col-md-4 col-lg-3">
+          <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+          <div class="card-body color-changer d-flex p-0">
+            <div class="image-maker overflow-hidden">
+            <img src="../Assets/images/cat-4.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+            <div class="d-flex flex-column justify-content-center ps-3">
+            <h6 class="card-title fw-bold">Category Name</h6>
+            <small class="card-text">100 Products</small>
+          </div>
+          </div>
+        </div>   
+        </div>
+                <!-- product 6 -->
+    <div class=" col-sm-6 col-md-4 col-lg-3">
+      <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+      <div class="card-body color-changer d-flex p-0">
+        <div class="image-maker overflow-hidden">
+        <img src="../Assets/images/cat-3.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+        <div class="d-flex flex-column justify-content-center ps-3">
+        <h6 class="card-title fw-bold">Category Name</h6>
+        <small class="card-text">100 Products</small>
+      </div>
+      </div>
+    </div>   
+</div>
+      <!-- product 7 -->
+      <div class=" col-sm-6 col-md-4 col-lg-3">
+        <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+        <div class="card-body color-changer d-flex p-0">
+          <div class="image-maker overflow-hidden">
+          <img src="../Assets/images/cat-2.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+          <div class="d-flex flex-column justify-content-center ps-3">
+          <h6 class="card-title fw-bold">Category Name</h6>
+          <small class="card-text">100 Products</small>
+        </div>
+        </div>
+      </div>   
+  </div>
+        <!-- product 8 -->
+        <div class=" col-sm-6 col-md-4 col-lg-3">
+          <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+          <div class="card-body color-changer d-flex p-0">
+            <div class="image-maker overflow-hidden">
+            <img src="../Assets/images/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+            <div class="d-flex flex-column justify-content-center ps-3">
+            <h6 class="card-title fw-bold">Category Name</h6>
+            <small class="card-text">100 Products</small>
+          </div>
+          </div>
+        </div>   
+    </div>
+     <!-- product 9 -->
+     <div class=" col-sm-6 col-md-4 col-lg-3">
+      <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+      <div class="card-body color-changer d-flex p-0">
+        <div class="image-maker overflow-hidden">
+        <img src="../Assets/images/cat-2.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+        <div class="d-flex flex-column justify-content-center ps-3">
+        <h6 class="card-title fw-bold">Category Name</h6>
+        <small class="card-text">100 Products</small>
+      </div>
+      </div>
+    </div>   
+    </div>
+            <!-- product 10 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+  <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+  <div class="card-body color-changer d-flex p-0">
+    <div class="image-maker overflow-hidden">
+    <img src="../Assets/images/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+    <div class="d-flex flex-column justify-content-center ps-3">
+    <h6 class="card-title fw-bold">Category Name</h6>
+    <small class="card-text">100 Products</small>
+  </div>
+  </div>
+</div>   
+</div>
+<!-- product 11 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+  <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+  <div class="card-body color-changer d-flex p-0">
+    <div class="image-maker overflow-hidden">
+    <img src="../Assets/images/cat-4.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+    <div class="d-flex flex-column justify-content-center ps-3">
+    <h6 class="card-title fw-bold">Category Name</h6>
+    <small class="card-text">100 Products</small>
+  </div>
+  </div>
+</div>   
+</div>
+  <!-- product 12 -->
+  <div class=" col-sm-6 col-md-4 col-lg-3">
+    <div class="card border-0 rounded-0 card-zoomer overflow-hidden">
+    <div class="card-body color-changer d-flex p-0">
+      <div class="image-maker overflow-hidden">
+      <img src="../Assets/images/cat-3.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+      <div class="d-flex flex-column justify-content-center ps-3">
+      <h6 class="card-title fw-bold">Category Name</h6>
+      <small class="card-text">100 Products</small>
+    </div>
+    </div>
+  </div>   
+</div>
+          </div>
+        </div>
+      
+    </section>
+    <!-- Featured Product   -->
+    <section class="px-xl-5 py-5">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div>
+            <h2 class="section-title position-relative my-0 fw-bold text-uppercase">
+              <span class="product-bg pe-2">FEATURED PRODUCTS</span>
+            </h2>
+          </div>
+
+        </div>
+          <!-- box 1 -->
+          <div class="row g-4 mt-1">
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+              <div class="card rounded-0 border-0 product-work">
+                <div class="overflow-hidden position-relative">
+                <img src="../Assets/images/product-1.jpg" class="card-img-top product-image" alt="product-1">
+                <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+                </div>
+              </div>
+                <div class="card-body d-flex flex-column align-items-center py-4">
+                  <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center">
+                    <h5 class="me-2">$123.00</h5>
+                    <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <p class="ms-2 text-black-50">(99)</p>
+                </div>
+                  
+                </div>
+              </div>  
+          </div>
+          <!-- box 2 -->
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+            <div class="card rounded-0 border-0 product-work">
+              <div class="overflow-hidden position-relative">
+              <img src="../Assets/images/product-2.jpg" class="card-img-top product-image" alt="product-1">
+              <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+              </div>
+            </div>
+              <div class="card-body d-flex flex-column align-items-center py-4">
+                <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                <div class="d-flex align-items-center">
+                  <h5 class="me-2">$123.00</h5>
+                  <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                  <div class="small-ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                  </div>
+                  <p class="ms-2 text-black-50">(99)</p>
+              </div>
+                
+              </div>
+            </div>  
+        </div>
+        <!-- box 3 -->
+        <div class=" col-sm-6 col-md-4 col-lg-3">
+          <div class="card rounded-0 border-0 product-work">
+            <div class="overflow-hidden position-relative">
+            <img src="../Assets/images/product-3.jpg" class="card-img-top product-image" alt="product-1">
+            <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+            </div>
+          </div>
+            <div class="card-body d-flex flex-column align-items-center py-4">
+              <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+              <div class="d-flex align-items-center">
+                <h5 class="me-2">$123.00</h5>
+                <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                </div>
+                <p class="ms-2 text-black-50">(99)</p>
+            </div>
+              
+            </div>
+          </div>  
+      </div>
+      <!-- box 4 -->
+      <div class=" col-sm-6 col-md-4 col-lg-3">
+        <div class="card rounded-0 border-0 product-work">
+          <div class="overflow-hidden position-relative">
+          <img src="../Assets/images/product-4.jpg" class="card-img-top product-image" alt="product-1">
+          <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+          </div>
+        </div>
+          <div class="card-body d-flex flex-column align-items-center py-4">
+            <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+            <div class="d-flex align-items-center">
+              <h5 class="me-2">$123.00</h5>
+              <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- <h5 class="review-stat">Cleanliness</h5> -->
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+              <p class="ms-2 text-black-50">(99)</p>
+          </div>
+            
+          </div>
+        </div>  
+    </div>
+    <!-- box 5 -->
+    <div class=" col-sm-6 col-md-4 col-lg-3">
+      <div class="card rounded-0 border-0 product-work">
+        <div class="overflow-hidden position-relative">
+        <img src="../Assets/images/product-5.jpg" class="card-img-top product-image" alt="product-1">
+        <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+        </div>
+      </div>
+        <div class="card-body d-flex flex-column align-items-center py-4">
+          <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+          <div class="d-flex align-items-center">
+            <h5 class="me-2">$123.00</h5>
+            <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- <h5 class="review-stat">Cleanliness</h5> -->
+            <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+            </div>
+            <p class="ms-2 text-black-50">(99)</p>
+        </div>
+          
+        </div>
+      </div>  
+  </div>
+  <!-- box 6 -->
+  <div class=" col-sm-6 col-md-4 col-lg-3">
+    <div class="card rounded-0 border-0 product-work">
+      <div class="overflow-hidden position-relative">
+      <img src="../Assets/images/product-6.jpg" class="card-img-top product-image" alt="product-1">
+      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+      </div>
+    </div>
+      <div class="card-body d-flex flex-column align-items-center py-4">
+        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+        <div class="d-flex align-items-center">
+          <h5 class="me-2">$123.00</h5>
+          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+          <div class="small-ratings">
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+          </div>
+          <p class="ms-2 text-black-50">(99)</p>
+      </div>
+        
+      </div>
+    </div>  
+</div>
+<!-- box 7 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+  <div class="card rounded-0 border-0 product-work">
+    <div class="overflow-hidden position-relative">
+    <img src="../Assets/images/product-7.jpg" class="card-img-top product-image" alt="product-1">
+    <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+    </div>
+  </div>
+    <div class="card-body d-flex flex-column align-items-center py-4">
+      <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+      <div class="d-flex align-items-center">
+        <h5 class="me-2">$123.00</h5>
+        <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- <h5 class="review-stat">Cleanliness</h5> -->
+        <div class="small-ratings">
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+        </div>
+        <p class="ms-2 text-black-50">(99)</p>
+    </div>
+      
+    </div>
+  </div>  
+</div>
+<!-- box 8 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+<div class="card rounded-0 border-0 product-work">
+  <div class="overflow-hidden position-relative">
+  <img src="../Assets/images/product-8.jpg" class="card-img-top product-image" alt="product-1">
+  <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+  </div>
+</div>
+  <div class="card-body d-flex flex-column align-items-center py-4">
+    <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+    <div class="d-flex align-items-center">
+      <h5 class="me-2">$123.00</h5>
+      <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- <h5 class="review-stat">Cleanliness</h5> -->
+      <div class="small-ratings">
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+      </div>
+      <p class="ms-2 text-black-50">(99)</p>
+  </div>
+    
+  </div>
+</div>  
+</div>
+
+        </div>
+      </div>     
+      </section>
+    <!-- Offer per 0ff -->
+    <section class="px-xl-5 py-4">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="d-flex align-items-center flex-column justify-content-center offer-bg-img offer-bg position-relative py-5 overflow-hidden">
+              <h6 class="mb-3 fw-bold text-white">SAVE 20%</h6>
+              <h4 class="fw-bold text-white">
+                Special Offer
+              </h4>
+              <button class="btn bg-warning text-dark border-light rounded-0 px-4 mt-1 border-0"> 
+
+                Shop Now
+            </button> 
+            </div>
+            </div>
+           <!-- box 2 -->
+           <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="d-flex align-items-center flex-column justify-content-center offer-bg-img2 offer-bg position-relative py-5 overflow-hidden">
+              <h6 class="mb-3 fw-bold text-white">SAVE 20%</h6>
+              <h4 class="fw-bold text-white">
+                Special Offer
+              </h4>
+              <button class="btn bg-warning text-dark border-light rounded-0 px-4 mt-1 border-0"> 
+
+                Shop Now
+            </button> 
+            </div>
+          </div>
+          </div>
+        </div>
+     
+    </section>
+    <!-- Recent Product   -->
+    <section class="px-xl-5 py-5">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div>
+            <h2 class="section-title position-relative my-0 fw-bold text-uppercase">
+              <span class="product-bg pe-2">RECENT PRODUCTS</span>
+            </h2>
+          </div>
+
+        </div>
+          <!-- box 1 -->
+          <div class="row g-4 mt-1">
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+              <div class="card rounded-0 border-0 product-work">
+                <div class="overflow-hidden position-relative">
+                <img src="../Assets/images/product-1.jpg" class="card-img-top product-image" alt="product-1">
+                <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                  <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+                </div>
+              </div>
+                <div class="card-body d-flex flex-column align-items-center py-4">
+                  <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center">
+                    <h5 class="me-2">$123.00</h5>
+                    <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <p class="ms-2 text-black-50">(99)</p>
+                </div>
+                  
+                </div>
+              </div>  
+          </div>
+          <!-- box 2 -->
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+            <div class="card rounded-0 border-0 product-work">
+              <div class="overflow-hidden position-relative">
+              <img src="../Assets/images/product-2.jpg" class="card-img-top product-image" alt="product-1">
+              <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+              </div>
+            </div>
+              <div class="card-body d-flex flex-column align-items-center py-4">
+                <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                <div class="d-flex align-items-center">
+                  <h5 class="me-2">$123.00</h5>
+                  <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                  <div class="small-ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                  </div>
+                  <p class="ms-2 text-black-50">(99)</p>
+              </div>
+                
+              </div>
+            </div>  
+        </div>
+        <!-- box 3 -->
+        <div class=" col-sm-6 col-md-4 col-lg-3">
+          <div class="card rounded-0 border-0 product-work">
+            <div class="overflow-hidden position-relative">
+            <img src="../Assets/images/product-3.jpg" class="card-img-top product-image" alt="product-1">
+            <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+              <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+            </div>
+          </div>
+            <div class="card-body d-flex flex-column align-items-center py-4">
+              <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+              <div class="d-flex align-items-center">
+                <h5 class="me-2">$123.00</h5>
+                <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                </div>
+                <p class="ms-2 text-black-50">(99)</p>
+            </div>
+              
+            </div>
+          </div>  
+      </div>
+      <!-- box 4 -->
+      <div class=" col-sm-6 col-md-4 col-lg-3">
+        <div class="card rounded-0 border-0 product-work">
+          <div class="overflow-hidden position-relative">
+          <img src="../Assets/images/product-4.jpg" class="card-img-top product-image" alt="product-1">
+          <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+            <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+          </div>
+        </div>
+          <div class="card-body d-flex flex-column align-items-center py-4">
+            <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+            <div class="d-flex align-items-center">
+              <h5 class="me-2">$123.00</h5>
+              <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- <h5 class="review-stat">Cleanliness</h5> -->
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+              <p class="ms-2 text-black-50">(99)</p>
+          </div>
+            
+          </div>
+        </div>  
+    </div>
+    <!-- box 5 -->
+    <div class=" col-sm-6 col-md-4 col-lg-3">
+      <div class="card rounded-0 border-0 product-work">
+        <div class="overflow-hidden position-relative">
+        <img src="../Assets/images/product-5.jpg" class="card-img-top product-image" alt="product-1">
+        <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+          <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+        </div>
+      </div>
+        <div class="card-body d-flex flex-column align-items-center py-4">
+          <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+          <div class="d-flex align-items-center">
+            <h5 class="me-2">$123.00</h5>
+            <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- <h5 class="review-stat">Cleanliness</h5> -->
+            <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+            </div>
+            <p class="ms-2 text-black-50">(99)</p>
+        </div>
+          
+        </div>
+      </div>  
+  </div>
+  <!-- box 6 -->
+  <div class=" col-sm-6 col-md-4 col-lg-3">
+    <div class="card rounded-0 border-0 product-work">
+      <div class="overflow-hidden position-relative">
+      <img src="../Assets/images/product-6.jpg" class="card-img-top product-image" alt="product-1">
+      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+      </div>
+    </div>
+      <div class="card-body d-flex flex-column align-items-center py-4">
+        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+        <div class="d-flex align-items-center">
+          <h5 class="me-2">$123.00</h5>
+          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+          <div class="small-ratings">
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+              <i class="fa fa-star rating-color"></i>
+          </div>
+          <p class="ms-2 text-black-50">(99)</p>
+      </div>
+        
+      </div>
+    </div>  
+</div>
+<!-- box 7 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+  <div class="card rounded-0 border-0 product-work">
+    <div class="overflow-hidden position-relative">
+    <img src="../Assets/images/product-7.jpg" class="card-img-top product-image" alt="product-1">
+    <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+      <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+    </div>
+  </div>
+    <div class="card-body d-flex flex-column align-items-center py-4">
+      <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+      <div class="d-flex align-items-center">
+        <h5 class="me-2">$123.00</h5>
+        <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- <h5 class="review-stat">Cleanliness</h5> -->
+        <div class="small-ratings">
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+        </div>
+        <p class="ms-2 text-black-50">(99)</p>
+    </div>
+      
+    </div>
+  </div>  
+</div>
+<!-- box 8 -->
+<div class=" col-sm-6 col-md-4 col-lg-3">
+<div class="card rounded-0 border-0 product-work">
+  <div class="overflow-hidden position-relative">
+  <img src="../Assets/images/product-8.jpg" class="card-img-top product-image" alt="product-1">
+  <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+    <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+
+  </div>
+</div>
+  <div class="card-body d-flex flex-column align-items-center py-4">
+    <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+    <div class="d-flex align-items-center">
+      <h5 class="me-2">$123.00</h5>
+      <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- <h5 class="review-stat">Cleanliness</h5> -->
+      <div class="small-ratings">
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star rating-color"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+      </div>
+      <p class="ms-2 text-black-50">(99)</p>
+  </div>
+    
+  </div>
+</div>  
+</div>
+
+        </div>
+      </div>     
+      </section>
+      <!-- vendor -->
+      <section class="px-xl-5 py-5">
+        <div class="container-fluid">
+          <div class="row g-4 slider-vendor">
+            <!-- boxx 1 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-1.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 2 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-2.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 3 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-3.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 4 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-4.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 5 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-5.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 6 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-6.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            
+            <!-- boxx 1 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-1.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 2 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4">
+                  <img src="../Assets/images/vendor-2.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 3 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-3.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 4 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-4.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 5 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-5.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- boxx 6 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card border">
+                <div class="image-slider overflow-hidden p-4 ">
+                  <img src="../Assets/images/vendor-6.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>     
+        </section>
+    </main>
+    <footer>
+      <!-- Footer -->
+      <section class="px-xl-5 pb-4 back-contact-color mt-5 pt-5">
+        <div class="container-fluid pt-5">
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="text-white">
+                <h5 class="fw-bold mb-4">GET IN TOUCH</h5>
+                <p class="mb-4">
+                  No dolore ipsum accusam no lorem. Invidunt sed clita kasd
+                  clita et et dolor sed dolor. Rebum tempor no vero est magna
+                  amet no.
+                </p>
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-marker me-3 text-warning"></i>123 Street,
+                  New York, USA</a
+                >
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-envelope me-3 text-warning"></i
+                  >info@example.com</a
+                >
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-phone-call me-3 text-warning"></i>+012 345
+                  67890</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">QUICK SHOP</h5>
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Home</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Our Shop</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shop Details</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shopping Cart</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Checkout</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">MY ACCOUNT</h5>
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Home</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Our Shop</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shop Details</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shopping Cart</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Checkout</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">NEWSLETTER</h5>
+                    <p class="mb-4">
+                      Duo stet tempor ipsum sit amet magna ipsum tempor est
+                    </p>
+                    <div class="input-group mb-4">
+                      <input
+                        type="email"
+                        id="form1"
+                        class="form-control rounded-0"
+                        placeholder="Your Email Address"
+                      />
+                      <button class="btn btn-warning rounded-0">Sign Up</button>
+                    </div>
+                    <h5 class="mb-3 fw-bold">Follow Us</h5>
+                    <div class="d-flex mb-4">
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning social-color"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+                <hr class="text-white my-0">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-md-start justify-content-center">
+                <div class="left-contact d-flex flex-column">
+                    <p class="text-white text-center text-md-start">
+                      <i class="fa fa-copyright"></i>
+                      <span class="text-warning">Domain.</span>
+                      All Rights Reserved. Designed by
+                      <span class="text-warning">Suleman</span>
+                    </p>
+                    <div class="text-white text-center text-md-start">
+                      Distributed By:
+                      <span class="text-warning"> MatzSolutions</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-md-end justify-content-center mt-3 mt-md-4">
+                <div class="overflow-hidden">
+                    <img src="../Assets/images/payments.png" class="" alt="bank-img">
+                  </div>
+            </div>
+            <!-- <div
+              class="border-top border-secondary-subtle d-flex justify-content-between flex-wrap"
+            >
+              <div class="left-contact d-flex flex-column">
+                <p class="mt-4 text-white">
+                  <i class="fa fa-copyright"></i>
+                  <span class="text-warning">Domain.</span>
+                  All Rights Reserved. Designed by
+                  <span class="text-warning">Suleman</span>
+                </p>
+                <div class="text-white">
+                  Distributed By:
+                  <span class="text-warning"> MatzSolutions</span>
+                </div>
+              </div>
+              
+              <div class="overflow-hidden">
+                <img src="../Assets/images/payments.png" class="mt-4" alt="bank-img">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new WOW().init();
+      $(".carousel").carousel();
+    </script>
+    <script src="jquery.js"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

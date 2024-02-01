@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../Assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <link rel="stylesheet" href="../Assets/css/queries.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar top -->
+      <section class="py-1 nav-top-bg px-1 px-xl-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="top-nav d-flex justify-content-between flex-wrap">
+              <ul class="nav-top-hidden mb-0 p-0 d-none">
+                <li><a href="#" class="top-nav-pad py-1 pe-2">About</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">Contact</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">Help</a></li>
+                <li><a href="#" class="top-nav-pad py-1 px-2">FAQs</a></li>
+              </ul>
+              <div
+                class="dropdown dropdown-for-center d-flex align-items-center"
+              >
+                <button
+                  class="btn bg-white dropdown-toggle nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Acoount
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Sign up</a></li>
+                </ul>
+                <button
+                  class="btn bg-white dropdown-toggle mx-1 mx-lg-2 nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                  <li><a class="dropdown-item" href="#">GBP</a></li>
+                  <li><a class="dropdown-item" href="#">CAD</a></li>
+                </ul>
+                <button
+                  class="btn bg-white dropdown-toggle nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EN
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">FR</a></li>
+                  <li><a class="dropdown-item" href="#">AR</a></li>
+                  <li><a class="dropdown-item" href="#">RU</a></li>
+                </ul>
+              </div>
+              <div class="d-flex d-lg-none">
+                <div class="nav-top-icon d-flex align-items-center ms-3">
+                  <i class="fa fa-heart me-2"></i>
+                  <span class="cirlce-icon-nav">
+                    <h6 class="mb-0">0</h6>
+                  </span>
+                </div>
+                <div class="nav-top-icon d-flex align-items-center ms-3">
+                  <i class="fi fi-rs-shopping-cart me-2 mt-2"></i>
+                  <span class="cirlce-icon-nav">
+                    <h6 class="mb-0">0</h6>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Navbar Middle -->
+      <section class="py-3 px-xl-5 d-none d-lg-block bg-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="total-nav d-flex justify-content-between align-items-center"
+            >
+              <div class="mid-nav px-0 d-flex">
+                <div class="d-flex">
+                  <h1
+                    class="bg-dark bg-opacity-75 text-warning fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    MULTI
+                  </h1>
+                  <h1
+                    class="bg-warning text-dark fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    SHOP
+                  </h1>
+                </div>
+              </div>
+              <div class="input-group sizing-srch-icon">
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Search for products"
+                  aria-label="products"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary text-warning rounded-0 search-btn"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+
+              <div class="for-customer d-flex justify-content-end flex-column">
+                <p class="text-end">Customer Service</p>
+                <p class="fs-5">+012 345 6789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- navbar end  -->
+      <section class="px-3 px-xl-5 bg-color-end bg-opacity-75">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg py-lg-0">
+            <div class="container-fluid px-2 px-xl-4">
+              <div class="btn-group d-none d-lg-block">
+                <button
+                  type="button"
+                  class="btn btn-warning dropdown-toggle px-4 py-4 rounded-0 toggles-spacer d-flex justify-content-center align-items-center fw-bold"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fi fi-rs-align-justify d-flex me-2"></i> Categories
+                </button>
+                <div class="dropdown-menu dropdown-menu-end w-100">
+                  <a href="#" class="dropdown-item">Dresses</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Shirts</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jeans</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Swimwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Sleepwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Spotwear</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jumpsuits</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Blazers</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Jackets</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Shoes</a>
+                </div>
+              </div>
+
+              <div class="mid-nav d-flex d-lg-none">
+                <div class="d-flex">
+                  <h1
+                    class="bg-white text-dark fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    MULTI
+                  </h1>
+                  <h1
+                    class="bg-warning text-white fw-bold mid-nav-text px-2 mb-0 fs-1"
+                  >
+                    SHOP
+                  </h1>
+                </div>
+              </div>
+
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler bg-white px-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link clicker-nav text-white"
+                      aria-current="page"
+                      href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav active" href="./shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav" href="./shop-detail.html">Shop Detail</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-white clicker-nav"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu bg-warning rounded-0">
+                      <li>
+                        <a class="dropdown-item" href="./shopping-cart.html">Shopping Cart</a>
+                      </li>
+                      <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white clicker-nav" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+
+                <div class="d-none d-lg-flex">
+                  <div class="nav-top-icon d-flex align-items-center ms-3">
+                    <i class="fa fa-heart me-2 text-warning"></i>
+                    <span class="cirlce-icon-nav border-light">
+                      <h6 class="mb-0 text-white">0</h6>
+                    </span>
+                  </div>
+                  <div class="nav-top-icon d-flex align-items-center ms-3">
+                    <i
+                      class="fi fi-rs-shopping-cart me-2 mt-2 text-warning"
+                    ></i>
+                    <span class="cirlce-icon-nav border-light">
+                      <h6 class="mb-0 text-white">0</h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+        <!-- breadcrumb -->
+     <section class="px-xl-5 mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb bg-white px-3 py-3">
+                        
+                        <a href="#" class="text-dark font-size-xs-15 font-size-sm-17">Home</a>
+                        <a href="#" class="text-dark font-size-xs-15 font-size-sm-17">Shop</a>
+                        <span href="" class="text-dark font-size-xs-15 font-size-sm-17">Shop List</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- filters -->
+     <section class="px-xl-5 mt-4">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-md-4 col-lg-3">
+                    <div class="row g-4">
+                        <!-- box 1 -->
+                <div class="col-12">
+                    <div>
+                        <h5 class="section-title position-relative my-0 fw-bold text-uppercase mb-3">
+                          <span class="product-bg pe-2">FILTER BY PRICE</span>
+                        </h5>
+                      </div>
+                      <div class="card border-0 rounded-0 p-4">
+                        <div class="card-body d-flex justify-content-between p-0 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  All Price
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">1000</small>
+                              </div>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">
+                                    $0 - $100
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">150</small>
+                              </div>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">
+                                    $100 - $200
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">295</small>
+                              </div>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">
+                                    $200 - $300
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">246</small>
+                              </div>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault4">
+                                <label class="form-check-label" for="flexCheckDefault4">
+                                    $300 - $400
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">145</small>
+                              </div>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 ">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault5">
+                                <label class="form-check-label" for="flexCheckDefault5">
+                                    $400 - $500
+                                </label>
+                              </div>
+                              <div>
+                                <small class="border px-1">168</small>
+                              </div>
+                        </div>
+                        
+                        
+                      </div>
+
+                    </div>
+                    <!-- box 2 -->
+                    <div class="col-12">
+                        <div>
+                            <h5 class="section-title position-relative my-0 fw-bold text-uppercase mb-3">
+                              <span class="product-bg pe-2">FILTER BY Color</span>
+                            </h5>
+                          </div>
+                          <div class="card border-0 rounded-0 p-4">
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckChecked0" checked>
+                                    <label class="form-check-label" for="flexCheckChecked0">
+                                      All Color
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">1000</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault6">
+                                    <label class="form-check-label" for="flexCheckDefault6">
+                                        Black
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">150</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault7">
+                                    <label class="form-check-label" for="flexCheckDefault7">
+                                        White
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">295</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault8">
+                                    <label class="form-check-label" for="flexCheckDefault8">
+                                        Red
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">246</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault9">
+                                    <label class="form-check-label" for="flexCheckDefault9">
+                                        Blue
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">145</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 ">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault10">
+                                    <label class="form-check-label" for="flexCheckDefault10">
+                                        Green
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">168</small>
+                                  </div>
+                            </div>
+                            
+                            
+                          </div>
+    
+                        </div>
+                     <!-- box 2 -->
+                     <div class="col-12">
+                        <div>
+                            <h5 class="section-title position-relative my-0 fw-bold text-uppercase mb-3">
+                              <span class="product-bg pe-2">FILTER BY Size</span>
+                            </h5>
+                          </div>
+                          <div class="card border-0 rounded-0 p-4">
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckChecked11" checked>
+                                    <label class="form-check-label" for="flexCheckChecked11">
+                                      All Size
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">1000</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault12">
+                                    <label class="form-check-label" for="flexCheckDefault12">
+                                        XS
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">150</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault13">
+                                    <label class="form-check-label" for="flexCheckDefault13">
+                                        S
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">295</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault14">
+                                    <label class="form-check-label" for="flexCheckDefault14">
+                                        M
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">246</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault15">
+                                    <label class="form-check-label" for="flexCheckDefault15">
+                                        L
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">145</small>
+                                  </div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between p-0 ">
+                                <div class="form-check">
+                                    <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault16">
+                                    <label class="form-check-label" for="flexCheckDefault16"> 
+                                        XL
+                                    </label>
+                                  </div>
+                                  <div>
+                                    <small class="border px-1">168</small>
+                                  </div>
+                            </div>
+                            
+                            
+                          </div>
+    
+                        </div>
+                </div>
+                
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-9">
+                    <div class="row g-4">
+                        <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                        <button class="btn bg-white me-2">
+                            <i class="fa fa-th-large"></i>
+                        </button>
+                        <button class="btn bg-white">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                        <div
+                class="dropdown dropdown-for-center d-flex align-items-center"
+              >
+                <button
+                  class="btn bg-white dropdown-toggle nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sorting
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Latest</a></li>
+                  <li><a class="dropdown-item" href="#">Popularity</a></li>
+                  <li><a class="dropdown-item" href="#">Best Rating</a></li>
+                </ul>
+                <button
+                  class="btn bg-white dropdown-toggle mx-1 mx-lg-2 nav-size"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Showing
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">10</a></li>
+                  <li><a class="dropdown-item" href="#">20</a></li>
+                  <li><a class="dropdown-item" href="#">30</a></li>
+                </ul>
+            
+              </div>
+                    </div>
+                </div>  
+                <!-- box 1 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-1.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 2 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-2.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 3 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-3.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 4 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-4.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 5 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-5.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 6 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-6.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 7 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-7.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 8 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-8.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- box 9 -->
+                <div class=" col-sm-6 col-md-6 col-lg-4">
+                    <div class="card rounded-0 border-0 product-work">
+                      <div class="overflow-hidden position-relative">
+                      <img src="../Assets/images/product-9.jpg" class="card-img-top product-image" alt="product-1">
+                      <div class="product-icons d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 product-trans2"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 me-2 d-flex product-trans3"><i class="fi fi-rs-refresh d-flex align-items-center"></i></a>
+                        <a href="#" class="btn btn-outline-dark rounded-0 product-trans4"><i class="fa fa-search"></i></a>
+      
+                      </div>
+                    </div>
+                      <div class="card-body d-flex flex-column align-items-center py-4">
+                        <a href="#" class="text-dark fw-bold mb-2 product-title">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center">
+                          <h5 class="me-2">$123.00</h5>
+                          <h6 class="text-decoration-line-through text-black-50">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <!-- <h5 class="review-stat">Cleanliness</h5> -->
+                          <div class="small-ratings">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                          </div>
+                          <p class="ms-2 text-black-50">(99)</p>
+                      </div>
+                        
+                      </div>
+                    </div>  
+                </div>
+                <!-- pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled"><a class="page-link rounded-0 bg-white" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link text-white paginate-bg " href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-warning" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-warning" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link rounded-0 text-warning" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+            </div>
+                </div>
+                </div>
+            </div>
+        
+     </section>
+     
+    </main>
+    <footer>
+      <!-- Footer -->
+      <section class="px-xl-5 pb-4 back-contact-color mt-5 pt-5">
+        <div class="container-fluid pt-5">
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="text-white">
+                <h5 class="fw-bold mb-4">GET IN TOUCH</h5>
+                <p class="mb-4">
+                  No dolore ipsum accusam no lorem. Invidunt sed clita kasd
+                  clita et et dolor sed dolor. Rebum tempor no vero est magna
+                  amet no.
+                </p>
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-marker me-3 text-warning"></i>123 Street,
+                  New York, USA</a
+                >
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-envelope me-3 text-warning"></i
+                  >info@example.com</a
+                >
+                <a href="" class="mb-2"
+                  ><i class="fi fi-rs-phone-call me-3 text-warning"></i>+012 345
+                  67890</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">QUICK SHOP</h5>
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Home</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Our Shop</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shop Details</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shopping Cart</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Checkout</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">MY ACCOUNT</h5>
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Home</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Our Shop</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shop Details</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Shopping Cart</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Checkout</a
+                    >
+                    <a href="" class="lh-lg"
+                      ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="text-white mb-4">
+                    <h5 class="fw-bold mb-4">NEWSLETTER</h5>
+                    <p class="mb-4">
+                      Duo stet tempor ipsum sit amet magna ipsum tempor est
+                    </p>
+                    <div class="input-group mb-4">
+                      <input
+                        type="email"
+                        id="form1"
+                        class="form-control rounded-0"
+                        placeholder="Your Email Address"
+                      />
+                      <button class="btn btn-warning rounded-0">Sign Up</button>
+                    </div>
+                    <h5 class="mb-3 fw-bold">Follow Us</h5>
+                    <div class="d-flex mb-4">
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning me-2 social-color"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                      <a
+                        href=""
+                        class="btn btn-outline-dark rounded-0 bg-warning social-color"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+                <hr class="text-white my-0">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-md-start justify-content-center">
+                <div class="left-contact d-flex flex-column">
+                    <p class="text-white text-center text-md-start">
+                      <i class="fa fa-copyright"></i>
+                      <span class="text-warning">Domain.</span>
+                      All Rights Reserved. Designed by
+                      <span class="text-warning">Suleman</span>
+                    </p>
+                    <div class="text-white text-center text-md-start">
+                      Distributed By:
+                      <span class="text-warning"> MatzSolutions</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-md-end justify-content-center mt-3 mt-md-4">
+                <div class="overflow-hidden">
+                    <img src="../Assets/images/payments.png" class="" alt="bank-img">
+                  </div>
+            </div>
+            <!-- <div
+              class="border-top border-secondary-subtle d-flex justify-content-between flex-wrap"
+            >
+              <div class="left-contact d-flex flex-column">
+                <p class="mt-4 text-white">
+                  <i class="fa fa-copyright"></i>
+                  <span class="text-warning">Domain.</span>
+                  All Rights Reserved. Designed by
+                  <span class="text-warning">Suleman</span>
+                </p>
+                <div class="text-white">
+                  Distributed By:
+                  <span class="text-warning"> MatzSolutions</span>
+                </div>
+              </div>
+              
+              <div class="overflow-hidden">
+                <img src="../Assets/images/payments.png" class="mt-4" alt="bank-img">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new WOW().init();
+      $(".carousel").carousel();
+    </script>
+    <script src="jquery.js"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+  </body>
+</html>
